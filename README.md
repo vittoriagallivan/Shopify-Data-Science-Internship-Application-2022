@@ -58,7 +58,7 @@ GROUP BY EmployeeID
 ORDER BY COUNT(EmployeeID) ASC
 LIMIT 1);
 
-# I was not able to get the correct result after running this code. It gives the wrong last name as I did it manually and performed the below code and know that Employee with last name “Peacock” is the correct answer. I have been trying to figure out why the employee last name outputs instead… this is going to be bothering me until I understand. As of right now I do not have an answer, but by interview time I will gladly explain! 
+# I was not able to get the correct result after running this code. It gives the wrong last name as I did it manually and performed the below code and know that Employee with last name “Peacock” is the correct answer. I have been trying to figure out why the employee last name outputs instead… this is going to be bothering me until I understand. As of right now I do not have an answer, but will continue to try!
 
 # Code that executes the right answer, but with only the employee ID:
 
