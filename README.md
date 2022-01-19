@@ -42,12 +42,16 @@ mean(Sample_Order_Data_Cleaned$order_amount)
 
 # How many orders were shipped by Speedy Express in total?
 
+Answer: 54 
+
 SELECT COUNT(*) AS "Total Orders from Speedy Express" 
 FROM Orders 
 WHERE ShipperID IN
 (SELECT ShipperID FROM Shippers WHERE ShipperID = 1)’
 
 # What is the last name of the employee with the most orders?
+
+Answer: “Peacock” 
 
 SELECT LastName AS "Employee Last Name with the Most Orders" 
 FROM Employees
@@ -61,6 +65,8 @@ LIMIT 1);
 # I was not able to get the correct result after running this code. It gives the wrong last name as I did it manually and performed the below code and know that Employee with last name “Peacock” is the correct answer. I have been trying to figure out why the employee last name outputs instead… this is going to be bothering me until I understand. As of right now I do not have an answer, but will continue to try!
 
 # Code that executes the right answer, but with only the employee ID:
+
+Answer: Chais
 
 SELECT COUNT(EmployeeID), EmployeeID AS "Employee ID" FROM Orders
 GROUP BY EmployeeID
